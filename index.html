@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Event Planner - Wedding, Engagement & Celebration Experts. Professional event decoration and planning services.">
+    <title>Event Planner | Wedding, Engagement & Celebration Experts</title>
+    <!-- Google Fonts: Poppins (body), Playfair Display (headings), Montserrat (accents) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ========== NAVIGATION BAR ========== -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#home" class="nav__logo">
+                <span class="nav__logo-text">Event Planner</span>
+                <span class="nav__logo-accent"></span>
+            </a>
+            <ul class="nav__menu" id="nav-menu">
+                <li><a href="#home" class="nav__link"><span>Home</span></a></li>
+                <li><a href="#services" class="nav__link"><span>Services</span></a></li>
+                <li><a href="#gallery" class="nav__link"><span>Gallery</span></a></li>
+                <li><a href="#about" class="nav__link"><span>About</span></a></li>
+                <li><a href="#contact" class="nav__link"><span>Contact</span></a></li>
+            </ul>
+            <button class="nav__toggle" id="nav-toggle" aria-label="Toggle menu">
+                <span class="nav__toggle-bar"></span>
+                <span class="nav__toggle-bar"></span>
+                <span class="nav__toggle-bar"></span>
+            </button>
+        </nav>
+        <span class="header__line" aria-hidden="true"></span>
+    </header>
+
+    <main>
+        <!-- ========== HERO SECTION ========== -->
+        <section class="hero" id="home">
+            <div class="hero__slideshow">
+                <div class="hero__slide hero__slide--active" style="background-image: url('wedding.jpg');"></div>
+                <div class="hero__slide" style="background-image: url('event-setup.jpg');"></div>
+                <div class="hero__slide" style="background-image: url('birthday.jpg');"></div>
+            </div>
+            <div class="hero__overlay"></div>
+            <div class="hero__content container">
+                <h1 class="hero__title">Event Planner</h1>
+                <p class="hero__tagline">Wedding, Engagement & Celebration Experts</p>
+                <div class="hero__buttons">
+                    <a href="#contact" class="btn btn--primary">Book Your Event</a>
+                    <a href="#services" class="btn btn--outline">View Services</a>
+                </div>
+            </div>
+            <div class="hero__scroll-indicator"></div>
+        </section>
+
+        <!-- ========== SERVICES SECTION ========== -->
+        <section class="services section" id="services">
+            <div class="container">
+                <h2 class="section__title">Our Services</h2>
+                <p class="section__subtitle">We bring your vision to life with stunning decorations and flawless execution</p>
+                <div class="services__grid">
+                    <article class="service-card">
+                        <div class="service-card__image-wrap">
+                            <img src="wedding.jpg" alt="Wedding decoration" class="service-card__image">
+                        </div>
+                        <div class="service-card__content">
+                            <h3 class="service-card__title">Wedding Decoration</h3>
+                            <p class="service-card__desc">Elegant floral arrangements, mandaps, and complete wedding venue styling to make your special day unforgettable.</p>
+                        </div>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-card__image-wrap">
+                            <img src="engagement.jpg" alt="Engagement decoration" class="service-card__image">
+                        </div>
+                        <div class="service-card__content">
+                            <h3 class="service-card__title">Engagement Decoration</h3>
+                            <p class="service-card__desc">Beautiful ring ceremony setups, stage décor, and themed engagement venues that wow your guests.</p>
+                        </div>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-card__image-wrap">
+                            <img src="baby-shower.jpg" alt="Baby shower decoration" class="service-card__image">
+                        </div>
+                        <div class="service-card__content">
+                            <h3 class="service-card__title">Baby Shower Decoration</h3>
+                            <p class="service-card__desc">Adorable themes, balloon arches, and cozy setups to celebrate the arrival of your little one.</p>
+                        </div>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-card__image-wrap">
+                            <img src="birthday.jpg" alt="Birthday party decoration" class="service-card__image">
+                        </div>
+                        <div class="service-card__content">
+                            <h3 class="service-card__title">Birthday Party Decoration</h3>
+                            <p class="service-card__desc">Themed parties, balloon décor, backdrops, and cake tables for birthdays of all ages.</p>
+                        </div>
+                    </article>
+                    <article class="service-card service-card--wide">
+                        <div class="service-card__image-wrap">
+                            <img src="event-setup.jpg" alt="Complete event planning" class="service-card__image">
+                        </div>
+                        <div class="service-card__content">
+                            <h3 class="service-card__title">Complete Event Planning & Execution</h3>
+                            <p class="service-card__desc">End-to-end event management—from concept and décor to catering coordination and on-day execution. We handle everything so you can enjoy the moment.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== GALLERY SECTION ========== -->
+        <section class="gallery section section--alt" id="gallery">
+            <div class="container">
+                <h2 class="section__title">Gallery</h2>
+                <p class="section__subtitle">A glimpse of our recent celebrations</p>
+                <div class="gallery__slider-wrap">
+                    <div class="gallery__slider" id="gallery-slider">
+                        <div class="gallery__slide">
+                            <img src="wedding.jpg" alt="Wedding decoration">
+                            <span class="gallery__slide-caption">Wedding</span>
+                        </div>
+                        <div class="gallery__slide">
+                            <img src="engagement.jpg" alt="Engagement setup">
+                            <span class="gallery__slide-caption">Engagement</span>
+                        </div>
+                        <div class="gallery__slide">
+                            <img src="birthday.jpg" alt="Birthday party">
+                            <span class="gallery__slide-caption">Birthday</span>
+                        </div>
+                        <div class="gallery__slide">
+                            <img src="baby-shower.jpg" alt="Baby shower">
+                            <span class="gallery__slide-caption">Baby Shower</span>
+                        </div>
+                        <div class="gallery__slide">
+                            <img src="event-setup.jpg" alt="Event setup">
+                            <span class="gallery__slide-caption">Event Setup</span>
+                        </div>
+                    </div>
+                    <button class="gallery__arrow gallery__arrow--prev" id="gallery-prev" aria-label="Previous">&#10094;</button>
+                    <button class="gallery__arrow gallery__arrow--next" id="gallery-next" aria-label="Next">&#10095;</button>
+                </div>
+                <div class="gallery__grid">
+                    <a href="#" class="gallery__item" style="background-image: url('wedding.jpg');">
+                        <span class="gallery__item-overlay"><span>Wedding</span></span>
+                    </a>
+                    <a href="#" class="gallery__item" style="background-image: url('engagement.jpg');">
+                        <span class="gallery__item-overlay"><span>Engagement</span></span>
+                    </a>
+                    <a href="#" class="gallery__item" style="background-image: url('birthday.jpg');">
+                        <span class="gallery__item-overlay"><span>Birthday</span></span>
+                    </a>
+                    <a href="#" class="gallery__item" style="background-image: url('baby-shower.jpg');">
+                        <span class="gallery__item-overlay"><span>Baby Shower</span></span>
+                    </a>
+                    <a href="#" class="gallery__item" style="background-image: url('event-setup.jpg');">
+                        <span class="gallery__item-overlay"><span>Events</span></span>
+                    </a>
+                    <a href="#" class="gallery__item" style="background-image: url('birthday.jpg');">
+                        <span class="gallery__item-overlay"><span>Celebration</span></span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== ABOUT US SECTION ========== -->
+        <section class="about section" id="about">
+            <div class="container">
+                <div class="about__grid">
+                    <div class="about__content">
+                        <h2 class="section__title">About Us</h2>
+                        <p class="about__text">At <strong>Event Planner</strong>, we believe every celebration deserves to be extraordinary. With a passion for creativity and an eye for detail, we specialise in turning your vision into reality—from intimate gatherings to grand weddings.</p>
+                        <p class="about__text">Our team brings together years of experience in decoration, floral design, and event coordination. We focus on quality materials, timely execution, and a seamless experience so you can enjoy your special day without stress.</p>
+                        <p class="about__text">Whether it's a dream wedding, a cosy baby shower, or a lively birthday party, we're here to make it memorable.</p>
+                    </div>
+                    <div class="about__image-wrap">
+                        <img src="about-team.jpg" alt="Event decoration team at work" class="about__image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== WHY CHOOSE US SECTION ========== -->
+        <section class="why section section--alt" id="why">
+            <div class="container">
+                <h2 class="section__title">Why Choose Us</h2>
+                <p class="section__subtitle">What sets us apart</p>
+                <div class="why__grid">
+                    <div class="why__card">
+                        <div class="why__icon">&#9733;</div>
+                        <h3 class="why__title">Experienced Team</h3>
+                        <p class="why__desc">Skilled professionals with years of experience in weddings and celebrations.</p>
+                    </div>
+                    <div class="why__card">
+                        <div class="why__icon">&#10024;</div>
+                        <h3 class="why__title">Creative Ideas</h3>
+                        <p class="why__desc">Unique themes and custom designs tailored to your style and budget.</p>
+                    </div>
+                    <div class="why__card">
+                        <div class="why__icon">&#128336;</div>
+                        <h3 class="why__title">On-Time Execution</h3>
+                        <p class="why__desc">We respect your timeline and deliver setup and teardown without delays.</p>
+                    </div>
+                    <div class="why__card">
+                        <div class="why__icon">&#128176;</div>
+                        <h3 class="why__title">Affordable Packages</h3>
+                        <p class="why__desc">Transparent pricing and flexible packages to suit different needs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== TESTIMONIALS SECTION ========== -->
+        <section class="testimonials section" id="testimonials">
+            <div class="container">
+                <h2 class="section__title">What Our Clients Say</h2>
+                <p class="section__subtitle">Real reviews from real celebrations</p>
+                <div class="testimonials__slider-wrap">
+                    <div class="testimonials__slider" id="testimonials-slider">
+                        <div class="testimonial-card">
+                            <p class="testimonial-card__text">"Event Planner made our wedding day absolutely magical. The decoration was beyond our expectations. Highly recommend!"</p>
+                            <p class="testimonial-card__author">— Priya & Rahul</p>
+                        </div>
+                        <div class="testimonial-card">
+                            <p class="testimonial-card__text">"Professional, creative, and on time. Our engagement ceremony looked stunning. Thank you for the beautiful setup."</p>
+                            <p class="testimonial-card__author">— Anjali M.</p>
+                        </div>
+                        <div class="testimonial-card">
+                            <p class="testimonial-card__text">"The baby shower décor was so cute and well organised. Guests couldn't stop complimenting. Will book again for birthdays!"</p>
+                            <p class="testimonial-card__author">— Sneha K.</p>
+                        </div>
+                        <div class="testimonial-card">
+                            <p class="testimonial-card__text">"From planning to execution, everything was smooth. They understood our vision and delivered perfectly. Best event planners!"</p>
+                            <p class="testimonial-card__author">— Vikram & Family</p>
+                        </div>
+                    </div>
+                    <div class="testimonials__dots" id="testimonials-dots"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== CONTACT SECTION ========== -->
+        <section class="contact section section--alt" id="contact">
+            <div class="container">
+                <h2 class="section__title">Get In Touch</h2>
+                <p class="section__subtitle">Tell us about your event and we'll get back to you soon</p>
+                <form class="contact__form" id="contact-form" novalidate>
+                    <div class="contact__row">
+                        <div class="contact__field">
+                            <label for="name">Name <span class="required">*</span></label>
+                            <input type="text" id="name" name="name" placeholder="Your name" required>
+                            <span class="contact__error" id="error-name"></span>
+                        </div>
+                        <div class="contact__field">
+                            <label for="phone">Phone <span class="required">*</span></label>
+                            <input type="tel" id="phone" name="phone" placeholder="Your phone number" required>
+                            <span class="contact__error" id="error-phone"></span>
+                        </div>
+                    </div>
+                    <div class="contact__field">
+                        <label for="email">Email <span class="required">*</span></label>
+                        <input type="email" id="email" name="email" placeholder="Your email" required>
+                        <span class="contact__error" id="error-email"></span>
+                    </div>
+                    <div class="contact__field">
+                        <label for="event-type">Event Type</label>
+                        <select id="event-type" name="event-type">
+                            <option value="">Select event type</option>
+                            <option value="wedding">Wedding</option>
+                            <option value="engagement">Engagement</option>
+                            <option value="baby-shower">Baby Shower</option>
+                            <option value="birthday">Birthday Party</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="contact__field">
+                        <label for="message">Message <span class="required">*</span></label>
+                        <textarea id="message" name="message" rows="4" placeholder="Tell us about your event, date, and requirements" required></textarea>
+                        <span class="contact__error" id="error-message"></span>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--full">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <h3 class="footer__logo">Event Planner</h3>
+                    <p class="footer__tagline">Wedding, Engagement & Celebration Experts</p>
+                </div>
+                <div class="footer__social">
+                    <a href="#" class="footer__social-link" aria-label="Facebook">Facebook</a>
+                    <a href="#" class="footer__social-link" aria-label="Instagram">Instagram</a>
+                    <a href="#" class="footer__social-link" aria-label="WhatsApp">WhatsApp</a>
+                </div>
+            </div>
+            <p class="footer__copyright">&copy; <span id="year"></span> Event Planner. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="project.js"></script>
+</body>
+</html>
